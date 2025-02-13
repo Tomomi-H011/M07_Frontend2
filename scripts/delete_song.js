@@ -21,7 +21,7 @@ async function getAllSongs() {
 
 // Delete a song by id
 async function deleteSong() {
-    const songID = document.querySelector("#songDropDown option: checked").value;  // Get the value of the selected song from the dropdown
+    const songID = document.querySelector("#songDropDown option:checked").value;  // Get the value of the selected song from the dropdown
     const response = await fetch("https://grove-numerous-weeder.glitch.me/api/songs/" + songID, {
         method: "DELETE"
     });
