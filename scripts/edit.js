@@ -3,7 +3,7 @@ addEventListener("DOMContentLoaded", async function() {
     const urlparam = new URLSearchParams(window.location.search);  //Grab the search parameter from the URL after the question mark (?id=...)
     const songID = urlparam.get('id');  //Get the value of the id parameter
 
-    const response = await this.fetch("https://climbing-speckle-wasp.glitch.me/api/songs" + songID);  //Fetch the song with the id from the server
+    const response = await this.fetch("https://grove-numerous-weeder.glitch.me/api/songs" + songID);  //Fetch the song with the id from the server
 
     if(response.ok) {
         let song = await response.json();  //Parse the response (song details) to a JSON object
@@ -31,7 +31,7 @@ async function updateSong() {
         popularity: document.querySelector("#popularity").value,
         genre: document.querySelector("#genre").value ? document.querySelector("#genre").value.split(",") : [] // Ternary operator.Split the genre string into an array when there are commas.
     };
-    const response = await fetch("https://climbing-speckle-wasp.glitch.me/api/songs/" + songID, {  //Put the song object to the server and save the song to the database //Added slash after ...api/songs/
+    const response = await fetch("https://grove-numerous-weeder.glitch.me/api/songs" + songID, {  //Put the song object to the server and save the song to the database //Added slash after ...api/songs/
         method: "PUT",
         headers: {
             "Content-Type": "application/json"  //Must specify format being sent

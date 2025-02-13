@@ -14,7 +14,7 @@ async function addSong() {
     };
     
     // Post the song object to the server and save the song to the database
-    const response = await fetch("https://climbing-speckle-wasp.glitch.me/api/songs/", {  
+    const response = await fetch("https://grove-numerous-weeder.glitch.me/api/songs", {  
         method: "POST",
         headers: {
             "Content-Type": "application/json"  //Must specify format being sent
