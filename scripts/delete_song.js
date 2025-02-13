@@ -10,7 +10,7 @@ async function deleteSong() {
     const urlparam = new URLSearchParams(window.location.search);  // Grab the search parameter from the URL after the question mark (?id=...)
     const songID = urlparam.get('id');  // Get the value of the id parameter
 
-    const response = await fetch("https://grove-numerous-weeder.glitch.me/api/songs" + songID, {
+    const response = await fetch("https://grove-numerous-weeder.glitch.me/api/songs/" + songID, {
         method: "DELETE"
     });
 
