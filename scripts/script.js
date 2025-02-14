@@ -1,6 +1,6 @@
 // Event lister that will trigger when DOM is loaded (= when visiting the page)
 addEventListener('DOMContentLoaded', async function () {
-    const response = await fetch("https://grove-numerous-weeder.glitch.me/api/songs/");  //"http://localhost:3000/api/songs" or "https://climbing-speckle-wasp.glitch.me/api/songs"
+    const response = await fetch("https://grove-numerous-weeder.glitch.me/api/songs/");  //"http://localhost:3000/api/songs" 
 
     const songs = await response.json();
 
