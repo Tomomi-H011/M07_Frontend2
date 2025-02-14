@@ -39,7 +39,7 @@ async function login(username, password){
         window.location.replace("index.html");
     }
     else{
-        document.querySelector("#error").innerHTML = "Bad username and password"; //Insert the error message to the div with the id "error"
+        document.querySelector("#errorMsg").innerHTML = "Bad username and password"; //Insert the error message to the div with the id "error"
     }
 
 }
