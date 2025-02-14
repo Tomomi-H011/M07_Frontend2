@@ -10,7 +10,8 @@ async function addSong() {
         artist: document.querySelector("#artist").value,
         releaseDate: document.querySelector("#released").value,
         popularity: document.querySelector("#popularity").value,
-        genre: document.querySelector("#genre").value ? document.querySelector("#genre").value.split(",") : [] // Ternary operator.Split the genre string into an array when there are commas.
+        genre: document.querySelector("#genre").value ? document.querySelector("#genre").value.split(",") : [], // Ternary operator.Split the genre string into an array when there are commas.
+        username: localStorage.getItem("uname") // Get the username from the local storage
     };
     
     // Post the song object to the server and save the song to the database
