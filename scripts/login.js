@@ -36,7 +36,7 @@ async function login(username, password){
         localStorage.setItem("uname", uname);
         localStorage.setItem("auth", auth);
         //redirect the user to the home page
-        window.location.replace("/index.html");
+        window.location.replace("index.html");
     }
     else{
         document.querySelector("#error").innerHTML = "Bad username and password"; //Insert the error message to the div with the id "error"
