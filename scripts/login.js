@@ -15,7 +15,7 @@ async function login(username, password){
     }
 
     //Send the login post request to the backend
-    const response = await fetch("https://grove-numerous-weeder.glitch.me/api/login/", {
+    const response = await fetch("https://grove-numerous-weeder.glitch.me/api/auth/", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
