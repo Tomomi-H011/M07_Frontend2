@@ -7,7 +7,7 @@ class Auth{
 
     validateAuth(auth){
         if(auth != 1){ // If there is no auth token
-            window.location.replace("/login.html"); // Redirect the user to the login page
+            window.location.replace("login.html"); // Redirect the user to the login page
         }
         else{
             document.querySelector("body").style.display = "block"; // If there is an auth token, show the body of the page
@@ -19,6 +19,6 @@ class Auth{
         localStorage.removeItem("token"); // Remove the token from the local storage
         localStorage.removeItem("uname"); // Remove the username from the local storage
 
-        window.location.replace("/login.html"); // Redirect the user to the login page
+        window.location.replace("login.html"); // Redirect the user to the login page
     }
 }
