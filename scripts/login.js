@@ -1,6 +1,6 @@
 let token;
-
-window.onload = function(){
+document.addEventListener("DOMContentLoaded", function() {
+// window.onload = function(){
     document.querySelector("#loginBtn").addEventListener("click", async function(){
         const username = document.querySelector("#username").value; // Grab the values from the input fields
         const password = document.querySelector("#password").value;
