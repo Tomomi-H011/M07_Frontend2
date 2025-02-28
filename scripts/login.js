@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const password = document.querySelector("#password").value;
         login(username, password);
     })
-};
+});
 
 async function login(username, password){
     const login_cred = {
