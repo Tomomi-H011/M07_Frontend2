@@ -11,4 +11,4 @@ addEventListener('DOMContentLoaded', async function () {
     } 
     
     document.querySelector("#list_of_songs").innerHTML = html;  // Insert the html to the div with the id "addedsong"
-});
+});     

@@ -4,9 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Page</title>
+    <script src="scripts/login.js"></script>
 </head>
 <body>
     <h1>Registration Page</h1>
-    
+    <form id="register" autocomplete="off">
+        <div>
+          <label for="username">Username:</label>
+          <input type="text" id="username" />
+        </div>
+        <div>
+          <label for="password">Password:</label>
+          <input type="text" id="password" />
+        </div>
+        <div>
+            <label for="status">Status:</label>
+            <input type="text" id="status" />
+          </div>
+        <button id="registerBtn" type="button">Register</button>
+        <p id="errorMsg" style="color: red"></p>
+      </form>
+  
 </body>
 </html>
